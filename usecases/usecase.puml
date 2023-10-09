@@ -1,0 +1,132 @@
+@startuml
+left to right direction
+skinparam packageStyle package
+actor "Lãnh đạo - giáo viên" as ldgv
+package "Hệ thống thông báo" {
+    ldgv --> (Thông báo về lịch dạy học hàng ngày, tuần hoặc tháng)
+    ldgv --> (Thông báo về bài tập, đồ án, \nhoặc nhiệm vụ cần hoàn thành bởi học sinh)
+    ldgv --> (Thông báo về các kỳ thi, lịch chấm thi)
+    ldgv --> (Thông báo về kết quả học tập của học sinh )
+    ldgv --> (Thông báo về các sự kiện liên quan đến giáo dục)
+    ldgv --> (Thông báo khẩn cấp thông tin quan trọng)
+}
+
+
+newpage
+
+left to right direction
+skinparam packageStyle package
+actor "Lãnh đạo - giáo viên" as ldgv
+package "Hệ thống tin nhắn" {
+    ldgv --> (Hỗ trợ trực tiếp)
+    ldgv --> (Gợi ý câu hỏi thường gặp,\n tự động trả lời bằng đáp án có sẵn)
+    ldgv --> (Cho phép người dùng hệ thống\n đặt lịch gửi, nhận tin nhắn)
+}
+
+newpage
+
+left to right direction
+skinparam packageStyle package
+actor "Lãnh đạo - giáo viên" as ldgv
+package "Hệ thống quản lý điểm số " {
+    ldgv --> (Nhập điểm số )
+    ldgv --> (Hỗ trợ nhiều loại điểm số\n và hệ thống đánh giá)
+    ldgv --> (Tính toán điểm tự động)
+    ldgv --> (Xem và sửa điểm số )
+    ldgv --> (Theo dõi tiến trình học tập)
+    ldgv --> (Báo cáo và thống kê)
+    ldgv --> (Xếp loại và phân loại)
+    ldgv --> (Bảo mật và quyền truy cập)
+}
+
+newpage
+
+left to right direction
+skinparam packageStyle package
+actor "Lãnh đạo - giáo viên" as ldgv
+package "Hệ thống quản lý lớp học" {
+    ldgv --> (Tạo lớp học)
+    ldgv --> (Thêm học sinh và giáo viên)
+    ldgv --> (Lên kế hoạch giảng dạy)
+    ldgv --> (Tạo bài giảng và nội dung học tập)
+    ldgv --> (Phân quyền truy cập)
+    ldgv --> (Giao tiếp và tương tác)
+    ldgv --> (Nộp bài và đánh giá)
+    ldgv --> (Thống kê và báo cáo)
+    ldgv --> (Hỗ trợ việc đánh giá và xếp loại học sinh\n dựa trên hiệu suất học tập)
+    ldgv --> (Cho phép tạo và chia sẻ video\n học trực tuyến và phát trực tiếp)
+    ldgv --> (Tích hợp quản lý nhiệm vụ học tập)
+    ldgv --> (Tích hợp thanh toán và học phí)
+}
+
+newpage
+left to right direction
+skinparam packageStyle package
+actor "Phụ huynh - học sinh" as phhs
+actor "Lãnh đạo - giáo viên" as ldgv
+package "Quản lý nhiệm vụ" {
+    ldgv --> (Tạo mới nhiệm vụ)
+    ldgv --> (Hiển thị nhiệm vụ )
+    phhs --> (Hiển thị nhiệm vụ )
+    ldgv --> (Chỉnh sửa nhiệm vụ)
+    ldgv --> (Báo cáo và thống kê)
+}
+
+newpage
+left to right direction
+skinparam packageStyle package
+actor "Lãnh đạo - giáo viên" as ldgv
+package "Quản lý tài chính" {
+    ldgv --> (Quản lý chi phí)
+    ldgv --> (Quản lý thu nhập)
+    ldgv --> (Quản lý tài sản)
+    ldgv --> (Quản lí công nợ)
+    ldgv --> (Báo cáo và thống kê)
+}
+
+newpage
+left to right direction
+skinparam packageStyle package
+actor "Đơn vị" as dv
+
+package "Quản lý học liệu" {
+    dv --> (Tải lên và lưu trữ tài liệu học tập)
+    dv --> (Tìm kiếm và lọc các tài liệu học tập)
+    dv --> (Tổ chức và phân loại tài liệu học tập)
+    dv --> (Quản lý quyền truy cập \nvà chia sẻ tài liệu học tập)
+    dv --> (Thống kê sử dụng tài liệu học tập)
+    dv --> (Hỗ trợ đa phương tiện)
+}
+
+newpage
+left to right direction
+skinparam packageStyle package
+actor "Đơn vị" as dv
+
+package "Quản lý giáo viên" {
+    dv --> (Quản lý thông tin cá nhân của giáo viên)
+    dv --> (Quản lý tài khoản đăng nhập và phân quyền)
+    dv --> (Quản lý thời khóa biểu của Giáo viên)
+    dv --> (Quản lý nhiệm vụ và bài giảng)
+    dv --> (Đánh giá và phản hồi)
+    dv --> (Báo cáo thống kê)
+}
+
+newpage
+left to right direction
+skinparam packageStyle package
+actor "Đơn vị" as dv
+
+package "Quản lý việc lạm dụng và bảo lực học đường" {
+    dv --> (Báo cáo sự cố)
+    dv --> (Quản lý phân quyền)
+    dv --> (Ghi nhận và theo dõi sự cố)
+    dv --> (Xử lý sự cố)
+    dv --> (Thiết lập hướng dẫn và chính sách)
+    dv --> (Thống kê và báo cáo)
+    dv --> (Liên lạc với Phụ huynh và Cộng đồng)
+}
+
+
+@enduml
+
